@@ -5,45 +5,101 @@
 /* Posts and pages */
 
 .sticky {
-	display: block;
+  display: block;
 }
 
 .hentry {
-	margin: 0 0 $base__space-unit;
+  margin: 0 0 $base__space-unit;
 }
 
-.updated:not(.published){
-	display: none;
+.updated:not(.published) {
+  display: none;
 }
 
 .single .byline,
 .group-blog .byline {
-	display: inline;
+  display: inline;
 }
 
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: $base__space-unit 0 0;
+  margin: $base__space-unit 0 0;
 }
 
 .page-links {
-	clear: both;
-	margin: 0 0 $base__space-unit;
+  clear: both;
+  margin: 0 0 $base__space-unit;
 }
 
 /* Asides */
 
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
-	display: none;
+  display: none;
 }
 
 /* Comments */
 
 .comment-content a {
-	word-wrap: break-word;
+  word-wrap: break-word;
 }
 .bypostauthor {
-	display: block;
+  display: block;
+}
+
+.site-content {
+  padding-top: 0;
+}
+
+.banner {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../../images/home-hero.jpg) no-repeat;
+  background-size: cover, cover;
+
+  img {
+    height: 240px;
+    width: 240px;
+  }
+}
+
+.product-categories {
+  display: flex;
+  text-align: center;
+
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.hero-image-header {
+  height: 220vh;
+}
+
+.entry-content {
+  display: block;
+  text-align: center;
+
+  .entry-title{
+    color:#FFF;
+    font-size: 3.2em;
+  }
+
+  h2,
+  p {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  h2 {
+    color: #2f1339;
+    font-size: 2.3rem;
+  }
+
+  p {
+    text-align: left;
+  }
 }

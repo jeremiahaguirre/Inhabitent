@@ -1,0 +1,38 @@
+.site-header {
+  display: flex;
+  position: absolute;
+  background-color: transparent;
+  
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  background: url(../../images/logos/inhabitent-logo-tent-white.svg) center
+    no-repeat;
+  background-size: 50px 33px;
+  height: 40px;
+  width: 50px;
+  padding-left: 10%;
+  display: flex;
+}
+
+.main-navigation {
+  font-family: 'Novecento Sans Web', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  ul {
+    padding-left: 70%;
+    margin: 0;
+  }
+
+  a:link,
+  a:visited {
+    position: relative;
+    float: right;
+    list-style: none;
+    padding-left: 16px;
+    color: #fff;
+  }
+}
