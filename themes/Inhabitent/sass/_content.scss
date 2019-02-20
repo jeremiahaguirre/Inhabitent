@@ -76,15 +76,15 @@
 }
 
 .hero-image-header {
-  height: 220vh;
+  height: 100vh;
 }
 
 .entry-content {
   display: block;
   text-align: center;
 
-  .entry-title{
-    color:#FFF;
+  .entry-title {
+    color: #fff;
     font-size: 3.2em;
   }
 
@@ -101,5 +101,23 @@
 
   p {
     text-align: left;
+  }
+}
+
+.home-blog-posts {
+  h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #2f1339;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    li {
+      list-style: none;
+      flex-direction: column;
+    }
   }
 }

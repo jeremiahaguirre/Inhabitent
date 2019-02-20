@@ -190,3 +190,12 @@
  		echo '</nav>';
  	}
  }
+
+ function get_home_blog_post(){
+	 $args = array(
+		'posts_per_page'   => 3,
+		'post_type'        => 'post',
+	);
+	$posts_array = get_posts( $args ); 
+	return $posts_array;
+ }
