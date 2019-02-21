@@ -3,6 +3,7 @@
  * The main template file.
  *
  * @package RED_Starter_Theme
+ * Template Name: home
  */
 
 get_header(); ?>

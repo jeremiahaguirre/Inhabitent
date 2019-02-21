@@ -8,17 +8,35 @@
 
 get_header();?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<main id="main" class="about-main" role="main">	
+
+<?php while (have_posts()): the_post();?>
+
+<?php the_content(); ?>
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+				'after'  => '</div>',
+			) );
+		?>
+		
 			
-			<?php while (have_posts()): the_post();?>
+		<?php endwhile; // End of the loop. ?>
 
-					<?php get_template_part('template-parts/content', 'page');?>
+		</main>
 
-				<?php endwhile; // End of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
 
 <?php get_footer();?>
+<?php
+/**
+ * Template part for displaying page content in page.php.
+ *
+ * @package RED_Starter_Theme
+ */
+
+?>
+
+
+
+

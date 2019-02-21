@@ -12,28 +12,41 @@ get_header();?>
 		<div class="banner">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" />
 		</div>
-			
-		<div class="home-blog-posts">
+		<section class='home-product-sections'>
+			<h2>Shop Stuff</h2>
+			<?php $terms = get_terms(
+				array(
+					'taxonomy'=>'product_type',
+					'hide_empty'=>0,
+			))?>
+			<?php foreach($terms as $term):?>
+				<p><?php echo $term->description ;?></p>		
+				<a href="<?php get_term_link($term); ?>"><?php echo $term->name ;?></a>
+
+			<?php endforeach; ?>
+		</section>	
+		<section class="home-blog-posts">
 			<h2>Inhabitent Journal</h2>
 				<ul>
 					<?php $product_posts = get_home_blog_post();?>
 					<?php foreach ($product_posts as $post): setup_postdata($post);?>
-					<li><div class="home-post-thumbnail"><?php if (has_post_thumbnail()): ?>	
-						<?php the_post_thumbnail('medium_large', ['class' => 'home-blog-img']);?></div>
-						<div class="home-blog-text"><span><?php the_date();?>&nbsp;&nbsp;/&nbsp;</span>
-						<span><?php echo comments_number();?></span>
-						<span><?php the_title(); ?></span></li>
-						<a href="<?php the_permalink()?>">Read Entry</a></div>
+					<li>
+						<div class="home-post-thumbnail"><?php if (has_post_thumbnail()): ?>	
+							<?php the_post_thumbnail('medium_large', ['class' => 'home-blog-img']);?></div>
+							<div class="home-blog-text"><span><?php the_date();?>&nbsp;&nbsp;/&nbsp;
+							<?php echo comments_number();?></span>
+							<h3><?php the_title(); ?></h3>
+							<form><button type="button"><a href="<?php the_permalink()?>">Read Entry</a></button></form>
+						</div>
+					</li>
 					<?php endif;?>
 					<?php endforeach;
 					wp_reset_postdata();?>
 				</ul>
-		</div>
+		</section>
 		<div class="adventure-posts">
 		</div> 
 
 	</main><!-- #main -->
 </div><!-- #primary -->
-
-<?php get_sidebar();?>
 <?php get_footer();?>

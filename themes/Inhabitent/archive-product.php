@@ -15,11 +15,16 @@ get_header();?>
 			<header class="page-header">
 			<nav class="product-categories">
 					<h2>Shop Stuff</h2>
+					<?php $terms = get_terms(
+						array(
+							'taxonomy'=>'product_type',
+							'hide_empty'=>0,
+					))?>
+				
 					<ul>
-						<li><a href="http://localhost:8888/project-4/product_type/do/">Do</a></li>
-						<li><a href="http://localhost:8888/project-4/product_type/eat/">Eat</a></li>
-						<li><a href="http://localhost:8888/project-4/product_type/sleep/">Sleep</a></li>
-						<li><a href="http://localhost:8888/project-4/product_type/wear/">Wear</a></li>
+					<?php foreach ($terms as $term): ?>
+						<li><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name ;?></a></li>
+						<?php endforeach ?>
 					</ul>
 				</nav>
 			</header><!-- .page-header -->
