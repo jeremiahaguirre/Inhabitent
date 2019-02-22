@@ -20,7 +20,8 @@ get_header();?>
 					'hide_empty'=>0,
 			))?>
 			<?php foreach($terms as $term):?>
-				<p><?php echo $term->description ;?></p>		
+			<img scr="<?php echo get_template_directory_uri(); ?><?php echo $term->slug;?>.svg">	
+			<p><?php echo $term->description ;?></p>		
 				<a href="<?php get_term_link($term); ?>"><?php echo $term->name ;?></a>
 
 			<?php endforeach; ?>

@@ -1,27 +1,24 @@
+
 .site-header {
   display: flex;
   position: absolute;
-  background-color: transparent;
-  color:white;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #248a83;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  
 }
-
 .logo {
-  background: url(../../images/logos/inhabitent-logo-tent-white.svg) center
-    no-repeat;
+  background: url(../../images/logos/inhabitent-logo-tent.svg) center no-repeat;
   background-size: 50px 33px;
   height: 40px;
   width: 50px;
   padding-left: 10%;
-  display: flex;
 }
-
 .main-navigation {
-  font-family: 'Novecento Sans Web', sans-serif;
   text-transform: uppercase;
-  display: flex;
+
   ul {
     padding-left: 70%;
     margin: 0;
@@ -32,7 +29,48 @@
     position: relative;
     float: right;
     list-style: none;
-    padding-left: 16px;
-    color: #fff;
+    padding-left: 12px;
+    color: #248a83;
   }
 }
+.home,.page-template-about {
+  .site-header {
+    display: flex;
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+  }
+
+  .logo {
+    background: url(../../images/logos/inhabitent-logo-tent-white.svg) center
+      no-repeat;
+    background-size: 50px 33px;
+    height: 40px;
+    width: 50px;
+    padding-left: 10%;
+  }
+
+  .main-navigation {
+    font-family: 'Novecento Sans Web', sans-serif;
+    text-transform: uppercase;
+
+    ul {
+      padding-left: 70%;
+      margin: 0;
+    }
+
+    a:link,
+    a:visited {
+      position: relative;
+      float: right;
+      list-style: none;
+      padding-left: 12px;
+      color: #fff;
+    }
+  }
+}
+
