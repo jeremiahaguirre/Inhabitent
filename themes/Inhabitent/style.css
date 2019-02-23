@@ -475,7 +475,8 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%; }
+  width: 100%;
+  top: 32px; }
 
 .logo {
   background: url(../../images/logos/inhabitent-logo-tent.svg) center no-repeat;
@@ -685,6 +686,17 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.widget-area {
+  border-left: 1px solid #a1a1a1;
+  text-align: center;
+  padding-left: 5%;
+  width: 27%; }
+  .widget-area h2 {
+    color: #2f1339; }
+  .widget-area a {
+    color: #248a83;
+    text-decoration: none; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -738,6 +750,49 @@ a {
     left: 41%;
     top: 30%; }
 
+.home h2 {
+  text-align: center;
+  color: #2f1339;
+  font-size: 2.4rem; }
+
+.home-product-sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 92%;
+  margin-left: 3%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .home-product-sections li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    border: 1px solid #a1a1a1;
+    padding: 10px;
+    list-style: none;
+    margin-left: -60px; }
+  .home-product-sections .taxonomy-img {
+    width: 80px;
+    height: 80px; }
+  .home-product-sections button {
+    background: #248a83;
+    border-radius: 0;
+    border: 1px solid #248a83;
+    padding: 12px;
+    padding-left: 14%;
+    padding-right: 14%; }
+    .home-product-sections button a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.3em;
+      text-transform: uppercase; }
+  .home-product-sections button:hover {
+    background: #1c706b;
+    border: 1px solid #1c706b; }
+
 .product-categories {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -757,14 +812,19 @@ a {
     font-size: 2.4rem;
     color: #2f1339; }
   .home-blog-posts h3 {
-    color: #248a83; }
+    color: #248a83;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 13%; }
   .home-blog-posts button {
     background: #fff;
     border-radius: 0;
     border: 1px solid #000;
     padding: 12px;
     padding-left: 10%;
-    padding-right: 10%; }
+    padding-right: 10%;
+    position: absolute;
+    bottom: 4px; }
     .home-blog-posts button a {
       text-decoration: none;
       color: black;
@@ -787,12 +847,14 @@ a {
         align-content: center;
     list-style: none; }
     .home-blog-posts ul li {
-      border: 1px solid grey;
+      border: 1px solid #a1a1a1;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding: 10px; }
+      padding: 5px;
+      margin-left: 30px;
+      position: relative; }
 
 .home-blog-text {
   display: -webkit-box;
@@ -830,6 +892,60 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 1120px; }
+
+.blog header {
+  max-height: 600px; }
+  .blog header img {
+    width: 55em; }
+  .blog header a {
+    text-decoration: none;
+    color: #fff; }
+  .blog header h2 {
+    position: relative;
+    bottom: 560px;
+    left: 0;
+    padding: 10px;
+    background-color: #248a83;
+    color: #fff;
+    width: 50%;
+    font-size: 2.1rem; }
+  .blog header .entry-meta {
+    position: relative;
+    left: 511px;
+    bottom: 240px;
+    background-color: #248a83;
+    color: #fff;
+    width: 40%;
+    padding: 6px; }
+
+.blog .entry-content {
+  width: 90%;
+  text-align: left;
+  margin-bottom: 10px; }
+
+.blog button {
+  background: #fff;
+  border-radius: 0;
+  border: 1px solid #000;
+  padding: 12px;
+  padding-left: 3%;
+  padding-right: 3%; }
+  .blog button a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    text-transform: uppercase; }
+
+.blog button:hover {
+  background: #248a83;
+  border: 1px solid #248a83; }
+  .blog button:hover a {
+    color: #fff; }
+
+.main-shop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.3rem; }
 
 footer {
   display: -webkit-box;

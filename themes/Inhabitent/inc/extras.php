@@ -44,4 +44,16 @@ function my_admin_logo_url()
 	return get_site_url();
 }
 add_filter("login_headerurl", "my_admin_logo_url");
+
+
+function product_post( $query ) {
+	if (( is_post_type_archive( 'product' ) ||$query->is_tax('product_type')) && $query->is_main_query() ){
+        // Display 16 posts for a custom post type called 'shop_items'
+		$query->set( 'posts_per_page', 16 );
+		$query->set( 'order', 'ASC' );
+        return;
+    }
+}
+add_action( 'pre_get_posts', 'product_post', 1 );
+
 ?>

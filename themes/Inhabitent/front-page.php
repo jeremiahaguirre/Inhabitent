@@ -12,17 +12,19 @@ get_header();?>
 		<div class="banner">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" />
 		</div>
+		<h2>Shop Stuff</h2>
 		<section class='home-product-sections'>
-			<h2>Shop Stuff</h2>
+			
 			<?php $terms = get_terms(
 				array(
 					'taxonomy'=>'product_type',
 					'hide_empty'=>0,
 			))?>
 			<?php foreach($terms as $term):?>
-			<img scr="<?php echo get_template_directory_uri(); ?><?php echo $term->slug;?>.svg">	
+			<ul><li>
+			<img class="taxonomy-img" src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $term->slug;?>.svg">	
 			<p><?php echo $term->description ;?></p>		
-				<a href="<?php get_term_link($term); ?>"><?php echo $term->name ;?></a>
+				<button type="button"><a href="<?php get_term_link($term); ?>"><?php echo $term->name ;?></a></button></li></ul>
 
 			<?php endforeach; ?>
 		</section>	

@@ -35,7 +35,7 @@
 				
 					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
 					<div class="search-bar">
-					<!-- <?php get_search_form(); ?> -->
+					<!-- <div id="search"<?php get_search_form(); ?></div>-->
 					</div>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->

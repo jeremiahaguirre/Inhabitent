@@ -30,24 +30,22 @@ get_header();?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */?>
+			<div  class="main-shop">
 			<?php while (have_posts()): the_post();?>
-
-						<?php
-    get_template_part('template-parts/content');
-    ?>
-
+					<div>
+							<a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail('medium_large', ['class' => 'shop-img']); ?></a>
+						
+							<h2><?php the_title(); ?></h2>
+							<span><?php echo CFS()->get('product_price'); ?></span></div>
 					<?php endwhile;?>
-
-			<?php the_posts_navigation();?>
-
-		<?php else: ?>
+					</div>
+			<?php else: ?>
 
 			<?php get_template_part('template-parts/content', 'none');?>
 
-		<?php endif;?>
+			<?php endif;?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar();?>
 <?php get_footer();?>

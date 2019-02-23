@@ -21,16 +21,17 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
+			
 				<?php get_template_part( 'template-parts/content' ); ?>
-
+				
+				<div class="entry-content"/><button type="button"><a href="<?php echo get_permalink();?>">Read More &#8594;</a></button></div>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php  get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
 
