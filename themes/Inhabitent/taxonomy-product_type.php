@@ -6,39 +6,52 @@
  *
  */
 
-get_header();?>
+get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
 
-		<?php if (have_posts()): ?>
+        <?php if (have_posts()): ?>
 
-			<header class="page-header">
-				<?php
-        the_archive_title('<h1 class="page-title">', '</h1>');
-        the_archive_description('<div class="taxonomy-description">', '</div>');
+        <header class="page-header">
+            <?php
+            $terms = get_terms(
+                array(
+                    'taxonomy' => 'product_type',
+                    'hide_empty' => 0,
+                )
+            );
+            the_archive_description('<div class="taxonomy-description">', '</div>');
             ?>
-			</header><!-- .page-header -->
+        </header><!-- .page-header -->
 
-            <?php /* Start the Loop */?>
-            <?php $blog_posts = get_blog_post();?>
-			<?php foreach($blog_posts as $post):?>
-	                    <?php the_post_thumbnail('medium_large', ['class' => 'blog-img']);?>
-                        <h2><?php the_title();?></h2>
-                        
+        <?php  /* Start the Loop */?>
+        <div class="product-group">
+            <?php while (have_posts()): the_post(); ?>
+            <div>
+                <a href="<?php echo get_permalink(); ?>">
+                    <?php the_post_thumbnail('medium_large', ['class' => 'shop-img']); ?></a>
 
-            <?php endforeach;?>
-
-			<?php the_posts_navigation();?>
-
-		<?php else: ?>
-
-			<?php get_template_part('template-parts/content', 'none');?>
-
-		<?php endif;?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+                <h2>
+                    <?php the_title(); ?>
+                </h2>
+                <span>
+                    <?php echo CFS()->get('product_price'); ?></span>
+            </div>
 
 
-<?php get_footer();?>
+            <?php endwhile; ?>
+        </div>
+        <?php the_posts_navigation(); ?>
+
+        <?php else: ?>
+
+        <?php get_template_part('template-parts/content', 'none'); ?>
+
+        <?php endif; ?>
+
+    </main><!-- #main -->
+</div><!-- #primary -->
+
+
+<?php get_footer(); ?> 

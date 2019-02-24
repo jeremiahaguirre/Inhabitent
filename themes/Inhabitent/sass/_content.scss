@@ -51,7 +51,7 @@
 .site-content {
   padding-top: 0;
 }
-
+//Front page banner
 .banner {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -66,7 +66,7 @@
     top: 30%;
   }
 }
-
+//Front page content
 .home {
   h2 {
     text-align: center;
@@ -123,10 +123,6 @@
       list-style: none;
     }
   }
-}
-
-.hero-image-header {
-  height: 100vh;
 }
 
 .home-blog-posts {
@@ -195,7 +191,11 @@
   button {
   }
 }
-
+//About page hero image
+.hero-image-header {
+  height: 100vh;
+}
+//About page content
 .about-main {
   line-height: 40px;
   h1 {
@@ -214,7 +214,7 @@
     text-align: left;
   }
 }
-
+//Blog content styling
 .blog {
   .site-main {
     margin-top: 40px;
@@ -249,7 +249,7 @@
     .entry-meta {
       position: relative;
       left: 511px;
-      bottom: 240px;
+      bottom: 248px;
       background-color: #248a83;
       color: #fff;
       width: 40%;
@@ -273,18 +273,19 @@
         padding: 12px;
         padding-left: 3%;
         padding-right: 3%;
+        font-size: 0.8em;
       }
     }
     a:hover {
-      color: #fff;
       button {
         background: #248a83;
         border: 1px solid #248a83;
+        color: #fff;
       }
     }
   }
 }
-
+//Shop main styling
 .main-shop {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -294,7 +295,7 @@
     max-height: 198px;
   }
 }
-
+//Single products styling
 .single-product {
   main {
     margin-top: 90px;
@@ -306,4 +307,67 @@
   .entry-content {
     width: 43%;
   }
+}
+
+//Single journal posts
+.single-post {
+  .site-content {
+    display: flex;
+  }
+  main {
+    margin-left: 10%;
+    margin-top: 4em;
+    max-width: 1120px;
+    width: 87%;
+    button {
+      border: 1px solid #a1a1a1;
+      font-size: 1em;
+      padding: 11px;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-left: 30px;
+    }
+  }
+  .entry-header {
+    h1 {
+      position: absolute;
+      bottom: 193px;
+      left: 107px;
+      color: #fff;
+      background: #248a83;
+      padding: 8px;
+    }
+    img {
+      width: 96%;
+      height: 121vh;
+    }
+  }
+  .entry-content {
+    p {
+      padding-right: 10px;
+    }
+  }
+}
+
+//Find us
+.page {
+  .site-content {
+    display: flex;
+  }
+  .entry-content{
+    .map{
+      width:90%;
+      height:70vh;
+    }
+  }
+  main {
+    margin-left: 10%;
+    margin-top: 4em;
+    max-width: 1120px;
+    width: 87%;
+  }
+}
+
+main {
+  margin-bottom: 70px;
 }

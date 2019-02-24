@@ -855,9 +855,10 @@ a {
 
 .widget-area {
   border-left: 1px solid #a1a1a1;
-  text-align: center;
+  text-align: left;
   padding-left: 5%;
-  width: 27%; }
+  width: 27%;
+  margin-top: 40px; }
   .widget-area h2 {
     color: #2f1339; }
   .widget-area a {
@@ -969,9 +970,6 @@ a {
   .product-categories ul li {
     list-style: none; }
 
-.hero-image-header {
-  height: 100vh; }
-
 .home-blog-posts h2 {
   text-align: center;
   font-size: 2.4rem;
@@ -1041,6 +1039,9 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.hero-image-header {
+  height: 100vh; }
+
 .about-main {
   line-height: 40px; }
   .about-main h1 {
@@ -1087,7 +1088,7 @@ a {
   .blog header .entry-meta {
     position: relative;
     left: 511px;
-    bottom: 240px;
+    bottom: 248px;
     background-color: #248a83;
     color: #fff;
     width: 40%;
@@ -1108,12 +1109,12 @@ a {
       border: 1px solid #000;
       padding: 12px;
       padding-left: 3%;
-      padding-right: 3%; }
-  .blog .entry-content a:hover {
+      padding-right: 3%;
+      font-size: 0.8em; }
+  .blog .entry-content a:hover button {
+    background: #248a83;
+    border: 1px solid #248a83;
     color: #fff; }
-    .blog .entry-content a:hover button {
-      background: #248a83;
-      border: 1px solid #248a83; }
 
 .main-shop {
   display: grid;
@@ -1135,6 +1136,57 @@ a {
 
 .single-product .entry-content {
   width: 43%; }
+
+.single-post .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.single-post main {
+  margin-left: 10%;
+  margin-top: 4em;
+  max-width: 1120px;
+  width: 87%; }
+  .single-post main button {
+    border: 1px solid #a1a1a1;
+    font-size: 1em;
+    padding: 11px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 30px; }
+
+.single-post .entry-header h1 {
+  position: absolute;
+  bottom: 193px;
+  left: 107px;
+  color: #fff;
+  background: #248a83;
+  padding: 8px; }
+
+.single-post .entry-header img {
+  width: 96%;
+  height: 121vh; }
+
+.single-post .entry-content p {
+  padding-right: 10px; }
+
+.page .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.page .entry-content .map {
+  width: 90%;
+  height: 70vh; }
+
+.page main {
+  margin-left: 10%;
+  margin-top: 4em;
+  max-width: 1120px;
+  width: 87%; }
+
+main {
+  margin-bottom: 70px; }
 
 footer {
   display: -webkit-box;
@@ -1224,8 +1276,3 @@ object {
 
 .gallery-caption {
   display: block; }
-
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */
