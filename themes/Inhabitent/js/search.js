@@ -1,7 +1,10 @@
 (function($) {
   $(function() {
-    $('#search').on('click', () => {
-      $('#search').toggleClass('after-select');
-    });
+    $('#search').on('hover', () => {
+      $('.search-bar').toggleClass('after-select');
+    })
+    $('#search').on('hover', () => {
+        $('.main-navigation').toggleClass('move-over');
+      });
   });
 })(jQuery);

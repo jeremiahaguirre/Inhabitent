@@ -9,9 +9,9 @@ input[type='button'],
 input[type='reset'],
 input[type='submit'] {
   border: 1px solid;
-  border-color: #ccc #ccc #bbb;
+  border-color: transparent;
   border-radius: 3px;
-  background: #e6e6e6;
+  background: transparent;
   color: rgba(0, 0, 0, 0.8);
   @include font-size(0.75);
   line-height: 1;

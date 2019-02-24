@@ -24,7 +24,7 @@ get_header(); ?>
 			
 				<?php get_template_part( 'template-parts/content' ); ?>
 				
-				<div class="entry-content"/><button type="button"><a href="<?php echo get_permalink();?>">Read More &#8594;</a></button></div>
+				<div class="entry-content"/><a href="<?php echo get_permalink();?>"><button type="button">Read More &#8594;</button></a></div>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>

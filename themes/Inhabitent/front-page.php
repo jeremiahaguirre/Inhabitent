@@ -14,7 +14,7 @@ get_header();?>
 		</div>
 		<h2>Shop Stuff</h2>
 		<section class='home-product-sections'>
-			
+		
 			<?php $terms = get_terms(
 				array(
 					'taxonomy'=>'product_type',
