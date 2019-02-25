@@ -19,3 +19,11 @@ Next you'll need to run `npm install` **inside your theme directory** next to in
 ### 4. Update the proxy in `gulpfile.js`
 
 Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+
+# Skills learned 
+-Wordpress
+-Widgets Plugin API for wordpress
+-php
+-more git
+## About the project
+We started with the red starter theme, renamed it, and have costumized the templates and partials for Inhabitent. I have learned a lot about how to use partials. I also feel more firm in my knowledge in css in this project. I worked for the first time with grid and it was great!!

@@ -350,14 +350,14 @@
 }
 
 //Find us
-.page {
+.page-id-17 {
   .site-content {
     display: flex;
   }
-  .entry-content{
-    .map{
-      width:90%;
-      height:70vh;
+  .entry-content {
+    .map {
+      width: 90%;
+      height: 70vh;
     }
   }
   main {
@@ -370,4 +370,33 @@
 
 main {
   margin-bottom: 70px;
+}
+
+.post-type-archive {
+  .product-categories {
+    flex-direction: column;
+
+    ul {
+      display: flex;
+      margin-left: 15%;
+      list-style: none;
+      li {
+        padding-left: 13%;
+        justify-content: center;
+        text-align: center;
+
+        a {
+          text-decoration: none;
+          font-size: 1.5em;
+          &:link,
+          &:visited {
+            color: #248a83;
+          }
+        }
+      }
+    }
+    h2 {
+      color: #2f1339;
+    }
+  }
 }

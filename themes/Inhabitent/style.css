@@ -462,7 +462,7 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
-.site-header {
+.logged-in .site-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,6 +477,9 @@ textarea {
           justify-content: space-between;
   width: 100%;
   top: 32px; }
+
+.site-header {
+  top: 8px; }
 
 .logo {
   background: url(../../images/logos/inhabitent-logo-tent.svg) center no-repeat;
@@ -593,7 +596,7 @@ textarea {
 .home .after-select input:focus,
 .page-template-about .after-select textarea:focus,
 .page-template-about .after-select input:focus {
-  color: #FFF; }
+  color: #fff; }
 
 .home .after-select ::-webkit-input-placeholder,
 .page-template-about .after-select ::-webkit-input-placeholder {
@@ -1170,16 +1173,16 @@ a {
 .single-post .entry-content p {
   padding-right: 10px; }
 
-.page .site-content {
+.page-id-17 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.page .entry-content .map {
+.page-id-17 .entry-content .map {
   width: 90%;
   height: 70vh; }
 
-.page main {
+.page-id-17 main {
   margin-left: 10%;
   margin-top: 4em;
   max-width: 1120px;
@@ -1187,6 +1190,31 @@ a {
 
 main {
   margin-bottom: 70px; }
+
+.post-type-archive .product-categories {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .post-type-archive .product-categories ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 15%;
+    list-style: none; }
+    .post-type-archive .product-categories ul li {
+      padding-left: 13%;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      text-align: center; }
+      .post-type-archive .product-categories ul li a {
+        text-decoration: none;
+        font-size: 1.5em; }
+        .post-type-archive .product-categories ul li a:link, .post-type-archive .product-categories ul li a:visited {
+          color: #248a83; }
+  .post-type-archive .product-categories h2 {
+    color: #2f1339; }
 
 footer {
   display: -webkit-box;

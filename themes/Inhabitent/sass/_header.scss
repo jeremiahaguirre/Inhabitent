@@ -1,12 +1,17 @@
+.logged-in {
+  .site-header {
+    display: flex;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #248a83;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    top: 32px;
+  }
+}
 .site-header {
-  display: flex;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.6);
-  color: #248a83;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  top: 32px;
+  top: 8px;
 }
 .logo {
   background: url(../../images/logos/inhabitent-logo-tent.svg) center no-repeat;
@@ -124,7 +129,7 @@
     }
     textarea:focus,
     input:focus {
-      color: #FFF;
+      color: #fff;
     }
     ::placeholder {
       color: #fff;
