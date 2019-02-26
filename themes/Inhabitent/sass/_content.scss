@@ -179,9 +179,9 @@
       padding: 5px;
       margin-left: 14px;
       position: relative;
-    img{
-      height:180px;
-    }
+      img {
+        height: 180px;
+      }
     }
   }
 }
@@ -404,7 +404,7 @@ main {
           text-transform: uppercase;
           font-size: 1.5em;
           font-family: $font__other;
-          
+
           &:link,
           &:visited {
             color: $color__green;
@@ -429,5 +429,52 @@ main {
     img {
       height: 196px;
     }
+  }
+}
+
+//Adventure section
+.adventure-posts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 2fr;
+  margin-left:10px;
+  margin-right:10px;
+  button{
+    background-color:transparent;
+    border:1px solid #FFF;
+    border-radius: none;
+    color:#FFF;
+    font-size: 1em;
+  }
+  h2{
+    font-family: 'Merriweather Web',serif;
+    color:#FFF;
+  }
+  .adventure-1 {
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../images/adventure-photos/canoe-girl.jpg) no-repeat;
+    background-size:cover;
+    width: 700px;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+  .adventure-2 {
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    max-height: 217px;
+    width: 685px;
+    grid-column: 3/span 2;
+    grid-row: 1/span 1;
+  }
+  .adventure-3 {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat;
+    background-size: cover;
+    width: 330px;
+  }
+  .adventure-4 {
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../images/adventure-photos/night-sky.jpg) no-repeat;
+    background-size: cover;
+    width: 330px;
   }
 }

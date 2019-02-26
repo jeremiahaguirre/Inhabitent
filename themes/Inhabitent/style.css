@@ -1242,6 +1242,49 @@ main {
   .tax-product_type .product-group img {
     height: 196px; }
 
+.adventure-posts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 2fr;
+  margin-left: 10px;
+  margin-right: 10px; }
+  .adventure-posts button {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    border-radius: none;
+    color: #FFF;
+    font-size: 1em; }
+  .adventure-posts h2 {
+    font-family: 'Merriweather Web',serif;
+    color: #FFF; }
+  .adventure-posts .adventure-1 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/adventure-photos/canoe-girl.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/adventure-photos/canoe-girl.jpg) no-repeat;
+    background-size: cover;
+    width: 700px;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2; }
+  .adventure-posts .adventure-2 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    max-height: 217px;
+    width: 685px;
+    grid-column: 3/span 2;
+    grid-row: 1/span 1; }
+  .adventure-posts .adventure-3 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat;
+    background-size: cover;
+    width: 330px; }
+  .adventure-posts .adventure-4 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/adventure-photos/night-sky.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/adventure-photos/night-sky.jpg) no-repeat;
+    background-size: cover;
+    width: 330px; }
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;

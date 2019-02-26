@@ -60,10 +60,22 @@ get_header(); ?>
             </ul>
         </section>
         <section class="adventure-posts">
+            <div class="adventure-1">
             <h2>Getting Back to Nature in a Canoe</h2>
+            <button>Read more</button>
+                </div>
+                <div class="adventure-2">
             <h2>A Night with Friends at the Beach</h2>
+            <button>Read more</button>
+            </div>
+            <div class="adventure-3">
             <h2>Taking in the View at Big Mountain</h2>
+            <button>Read more</button>
+            </div>
+            <div class="adventure-4">
             <h2>Star-Gazing at the Night Sky</h2>
+            <button>Read more</button>
+            </div>
                 </section>
 
     </main><!-- #main -->
