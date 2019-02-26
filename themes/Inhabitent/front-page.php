@@ -59,8 +59,12 @@ get_header(); ?>
             wp_reset_postdata(); ?>
             </ul>
         </section>
-        <div class="adventure-posts">
-        </div>
+        <section class="adventure-posts">
+            <h2>Getting Back to Nature in a Canoe</h2>
+            <h2>A Night with Friends at the Beach</h2>
+            <h2>Taking in the View at Big Mountain</h2>
+            <h2>Star-Gazing at the Night Sky</h2>
+                </section>
 
     </main><!-- #main -->
 </div><!-- #primary -->

@@ -55,5 +55,10 @@ function product_post( $query ) {
     }
 }
 add_action( 'pre_get_posts', 'product_post', 1 );
-
+add_filter('get_the_archive_title', function ($title) {
+	if (is_tax('product_type')) {
+		$title = single_cat_title('', false);
+	}
+	return $title;
+});
 ?>

@@ -287,7 +287,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Merriweather Web";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -392,8 +392,6 @@ dd {
   margin: 0 1.5rem 1.5rem; }
 
 img {
-  height: auto;
-  /* Make sure images are scaled correctly. */
   max-width: 100%;
   /* Adhere to container width. */ }
 
@@ -463,12 +461,13 @@ textarea {
   width: 100%; }
 
 .logged-in .site-header {
+  font-family: "Novecento Sans Web", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.6);
-  color: #248a83;
+  color: #248A83;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -501,13 +500,14 @@ textarea {
     float: right;
     list-style: none;
     padding-left: 12px;
-    color: #248a83; }
+    color: #248A83; }
 
 .move-over ul {
   padding-left: 56%; }
 
 .home .site-header,
 .page-template-about .site-header {
+  font-family: "Novecento Sans Web", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -647,12 +647,14 @@ textarea {
   position: absolute;
   top: 9px;
   border-color: transparent; }
+  .search-bar button:focus {
+    outline: none; }
 
 .search-bar input {
   display: none; }
 
 .search-bar .fa-search {
-  color: #248a83;
+  color: #248A83;
   position: absolute;
   right: 19px;
   top: 0px; }
@@ -950,9 +952,9 @@ a {
     width: 80px;
     height: 80px; }
   .home-product-sections button {
-    background: #248a83;
+    background: #248A83;
     border-radius: 0;
-    border: 1px solid #248a83;
+    border: 1px solid #248A83;
     padding: 12px;
     padding-left: 14%;
     padding-right: 14%; }
@@ -979,7 +981,7 @@ a {
   color: #2f1339; }
 
 .home-blog-posts h3 {
-  color: #248a83;
+  color: #248A83;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 13%; }
@@ -1000,8 +1002,8 @@ a {
     text-transform: uppercase; }
 
 .home-blog-posts button:hover {
-  background: #248a83;
-  border: 1px solid #248a83; }
+  background: #248A83;
+  border: 1px solid #248A83; }
   .home-blog-posts button:hover a {
     color: #fff; }
 
@@ -1026,8 +1028,10 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 5px;
-    margin-left: 30px;
+    margin-left: 14px;
     position: relative; }
+    .home-blog-posts ul li img {
+      height: 180px; }
 
 .home-blog-text {
   display: -webkit-box;
@@ -1075,6 +1079,7 @@ a {
 .blog header {
   max-height: 600px; }
   .blog header img {
+    height: 545px;
     width: 55em; }
   .blog header a {
     text-decoration: none;
@@ -1084,7 +1089,7 @@ a {
     bottom: 560px;
     left: 0;
     padding: 10px;
-    background-color: #248a83;
+    background-color: #248A83;
     color: #fff;
     width: 50%;
     font-size: 2.1rem; }
@@ -1092,7 +1097,7 @@ a {
     position: relative;
     left: 511px;
     bottom: 248px;
-    background-color: #248a83;
+    background-color: #248A83;
     color: #fff;
     width: 40%;
     padding: 6px; }
@@ -1115,16 +1120,20 @@ a {
       padding-right: 3%;
       font-size: 0.8em; }
   .blog .entry-content a:hover button {
-    background: #248a83;
-    border: 1px solid #248a83;
+    background: #248A83;
+    border: 1px solid #248A83;
     color: #fff; }
 
 .main-shop {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.3rem; }
+  grid-gap: 1.3rem;
+  margin-left: 5em;
+  margin-right: 5em; }
   .main-shop .shop-img {
     max-height: 198px; }
+  .main-shop h2 {
+    display: inline; }
 
 .single-product main {
   margin-top: 90px; }
@@ -1143,7 +1152,8 @@ a {
 .single-post .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  height: 100%; }
 
 .single-post main {
   margin-left: 10%;
@@ -1159,16 +1169,17 @@ a {
     margin-left: 30px; }
 
 .single-post .entry-header h1 {
-  position: absolute;
-  bottom: 193px;
-  left: 107px;
+  position: relative;
+  bottom: 550px;
+  left: 0px;
   color: #fff;
-  background: #248a83;
-  padding: 8px; }
+  background: #248A83;
+  padding: 8px;
+  width: 70%; }
 
 .single-post .entry-header img {
   width: 96%;
-  height: 121vh; }
+  height: 550px; }
 
 .single-post .entry-content p {
   padding-right: 10px; }
@@ -1195,7 +1206,11 @@ main {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #a1a1a1; }
   .post-type-archive .product-categories ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1210,11 +1225,22 @@ main {
       text-align: center; }
       .post-type-archive .product-categories ul li a {
         text-decoration: none;
-        font-size: 1.5em; }
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-family: "Novecento Sans Web", sans-serif; }
         .post-type-archive .product-categories ul li a:link, .post-type-archive .product-categories ul li a:visited {
-          color: #248a83; }
+          color: #248A83; }
   .post-type-archive .product-categories h2 {
     color: #2f1339; }
+
+.tax-product_type .product-group {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.3rem;
+  margin-left: 5em;
+  margin-right: 5em; }
+  .tax-product_type .product-group img {
+    height: 196px; }
 
 footer {
   display: -webkit-box;
