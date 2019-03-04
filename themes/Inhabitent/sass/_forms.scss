@@ -9,22 +9,25 @@ input[type='button'],
 input[type='reset'],
 input[type='submit'] {
   border: 1px solid;
-  border-color: transparent;
+  border-color: $color__green;
   border-radius: 3px;
-  background: transparent;
+  background-color: $color__green;
   color: rgba(0, 0, 0, 0.8);
-  @include font-size(0.75);
+  @include font-size(0.95);
   line-height: 1;
   padding: 0.6rem 1rem 0.4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 
   &:hover {
-    border-color: #ccc #bbb #aaa;
+    border-color: #205f5b;
+    background-color: #205f5b;
+    color: #fff;
   }
 
   &:active,
   &:focus {
-    border-color: #aaa #bbb #bbb;
+    border-color: #205f5b;
+    background-color: #205f5b;
+    color: #fff;
   }
 }
 
@@ -58,3 +61,52 @@ textarea {
   width: 100%;
 }
 
+.search-bar {
+  form {
+    display: inline-block;
+
+    fieldset {
+      border: 0;
+      padding: 0;
+      padding-bottom: 0.75rem;
+      margin: 0;
+
+      button {
+        border-color: transparent;
+        background-color: transparent;
+        .fa-search {
+          color: $color__green;
+          float: left;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+      input {
+        transition: all 1s ease-in-out;
+        display: none;
+        border-color: transparent;
+        background-color: transparent;
+        text-transform: uppercase;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+.after-select {
+  form {
+    fieldset {
+      input {
+        display: inline-block;
+
+        &:focus {
+          border: 0;
+          outline: none;
+        }
+      }
+    }
+  }
+}
