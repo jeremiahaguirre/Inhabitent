@@ -13,7 +13,7 @@ A website selling camping items and contains blog post regarding outdoors
 
 ## Plugins
 
-**Iportant ones:**
+**Important ones:**
 
 * Contact Form 7
 * Inhabitent blocks from github repo
