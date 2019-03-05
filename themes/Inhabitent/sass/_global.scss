@@ -8,3 +8,9 @@ body {
   min-height: 100vh;
   color: $color__text-main;
 }
+
+h2 {
+  color: $color__purple;
+  font-family: $font__other;
+  text-transform: uppercase;
+}

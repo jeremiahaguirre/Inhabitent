@@ -20,42 +20,7 @@
   height: 100vh;
 }
 
-//Shop main styling
-.main-shop {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.3rem;
-  margin: 20px 140px;
-  .shop-img {
-    max-height: 198px;
-  }
 
-  dl {
-    width: 400px;
-  }
-  dt {
-    float: left;
-    width: 240px;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  dd {
-    float: left;
-    width: 100px;
-    overflow: hidden;
-  }
-
-  dt:after {
-    content: ' ......................................................';
-  }
-  h2 {
-    font-size: 1rem;
-    display: inline;
-    font-family: $font__main;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-}
 
 //Single products styling
 .single-product {

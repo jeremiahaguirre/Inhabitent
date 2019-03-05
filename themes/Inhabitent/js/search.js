@@ -1,16 +1,20 @@
 (function($) {
   $(function() {
-    $('.search-submit').on('click', event => {
-      if (!$('.search-bar').hasClass('after-select')) {
-        event.preventDefault();
-      }
-      $('.search-bar').addClass('after-select');
-      $('.main-navigation').addClass('move-over');
+    $('.icon-search').on('click', event => {
+      event.preventDefault();
+      $('.search-bar').toggleClass('after-select');
       $('.search-field').focus();
     });
-    $('.search-field').on('blur', () => {
+
+    $('.search-field').on('blur', event => {
+      if ($('.search-field').val().length > 0) {
+        return false;
+      }
       $('.search-bar').removeClass('after-select');
-      $('.main-navigation').removeClass('move-over');
     });
   });
 })(jQuery);
+
+//If statement if value in field dont close
+//Animation smooth
+//Use constants
