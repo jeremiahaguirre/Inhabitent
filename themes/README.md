@@ -1,24 +1,28 @@
-#Inhabitent
+# Inhabitent
 A website selling camping items and contains blog post regarding outdoors
 
-##Skills learned
+## Skills learned
 
-⋅⋅*Wordpress
-⋅⋅*idgets Plugin API for wordpress
-⋅⋅*php
-⋅⋅*more git
+*Wordpress
+*idgets Plugin API for wordpress
+*php
+*more git
 
-##Plugins
-###Iportant ones
-⋅⋅*Contact Form 7
-⋅⋅*Inhabitent blocks//from github repo
-⋅⋅*Inhabitent functionality//from github repo 
-⋅⋅*Inhabitent Business Hours Widget
-###Optional
-⋅⋅*Show Current Template
-⋅⋅*Theme Check
-⋅⋅*Debug Bar
-⋅⋅*Custom Field Suite
+## Plugins
+
+**Iportant ones:**
+
+*Contact Form 7
+*Inhabitent blocks from github repo
+*Inhabitent functionality from github repo
+*Inhabitent Business Hours Widget
+
+ **Optional:**
+
+*Show Current Template
+*Theme Check
+*Debug Bar
+*Custom Field Suite
 
 ## About the project
 
