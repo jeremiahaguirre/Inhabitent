@@ -11,7 +11,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
-        <?php if (have_posts()): ?>
+        <?php if (have_posts()) : ?>
 
         <header class="page-header">
             <?php
@@ -29,16 +29,20 @@ get_header(); ?>
 
         <?php  /* Start the Loop */?>
         <div class="product-group">
-            <?php while (have_posts()): the_post(); ?>
+            <?php while (have_posts()) : the_post(); ?>
             <div>
                 <a href="<?php echo get_permalink(); ?>">
                     <?php the_post_thumbnail('medium_large', ['class' => 'shop-img']); ?></a>
-
-                <h2>
-                    <?php the_title(); ?>
-                </h2>
-                <span>
-                    <?php echo CFS()->get('product_price'); ?></span>
+                <dl>
+                    <dt>
+                        <h2>
+                            <?php the_title(); ?>
+                        </h2>
+                    </dt>
+                    <dd><span>
+                            <?php echo CFS()->get('product_price'); ?></span>
+                    <dd>
+                </dl>
             </div>
 
 
@@ -46,7 +50,7 @@ get_header(); ?>
         </div>
         <?php the_posts_navigation(); ?>
 
-        <?php else: ?>
+        <?php else : ?>
 
         <?php get_template_part('template-parts/content', 'none'); ?>
 
