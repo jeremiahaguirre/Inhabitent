@@ -29,10 +29,31 @@
   .shop-img {
     max-height: 198px;
   }
+
+  dl {
+    width: 400px;
+  }
+  dt {
+    float: left;
+    width: 240px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  dd {
+    float: left;
+    width: 100px;
+    overflow: hidden;
+  }
+
+  dt:after {
+    content: ' ......................................................';
+  }
   h2 {
     font-size: 1rem;
     display: inline;
     font-family: $font__main;
+    overflow: hidden;
+    white-space: nowrap;
   }
 }
 
