@@ -64,27 +64,24 @@ textarea {
 .search-bar {
   form {
     display: inline-block;
-
+    margin-left: 10px;
+    margin-right: 10px;
     fieldset {
       border: 0;
       padding: 0;
       padding-bottom: 0.75rem;
       margin: 0;
-
-      button {
-        border-color: transparent;
-        background-color: transparent;
-        .fa-search {
-          color: $color__green;
-          float: left;
-        }
-        &:focus {
-          outline: none;
-        }
+      .fa-search {
+        color: $color__green;
       }
+      &:focus {
+        outline: none;
+      }
+
       input {
-        transition: all 1s ease-in-out;
-        display: none;
+        transition: all 0.5s ease-in;
+        display: inline-block;
+        width: 0;
         border-color: transparent;
         background-color: transparent;
         text-transform: uppercase;
@@ -95,13 +92,28 @@ textarea {
     }
   }
 }
+.home,
+.page-template-about {
+  .search-bar {
+    fieldset {
+      .fa-search {
+        color: #fff;
+      }
+      input {
+        color: #fff;
+      }
+      ::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+}
 
 .after-select {
   form {
     fieldset {
       input {
-        display: inline-block;
-
+        width: 200px;
         &:focus {
           border: 0;
           outline: none;
