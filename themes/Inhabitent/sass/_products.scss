@@ -1,0 +1,87 @@
+//Shop main styling
+dl {
+  width: 260px;
+}
+dt {
+  float: left;
+  width: 181px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+dd {
+  width: 63px;
+  overflow: hidden;
+}
+
+dt:after {
+  content: ' ......................................................';
+}
+
+.main-shop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.3rem;
+  margin: 20px 140px;
+  .shop-img {
+    max-height: 198px;
+  }
+
+  h2 {
+    font-size: 0.9rem;
+    display: inline;
+    font-family: $font__main;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+.tax-product_type {
+  header {
+    h1 {
+      font-family: $font__other;
+      font-size: 3rem;
+    }
+    text-align: center;
+  }
+  h2 {
+    font-size: 0.9rem;
+    display: inline;
+    font-family: $font__main;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+//Single products
+.single-product {
+  #page {
+    .site-content {
+      margin: 0 40px;
+      display: flex;
+      justify-content: space-between;
+      .price {
+        h1 {
+          color: $color__orange;
+          font-family: $font__other;
+        }
+        span {
+          font-size: 1.75rem;
+          font-family: $font__other;
+        }
+      }
+    }
+    .entry-content {
+      margin: 0;
+      width: 41%;
+      button {
+        color: #000;
+        background-color: transparent;
+        border: 1px solid #000;
+        &:hover {
+          color: #fff;
+          background-color: $color__green;
+          border: $color__green;
+        }
+      }
+    }
+  }
+}
