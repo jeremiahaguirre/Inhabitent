@@ -39,9 +39,9 @@ get_header(); ?>
                     <?php the_post_thumbnail('medium_large', ['class' => 'shop-img']); ?></a>
                 <dl>
                     <dt>
-                        <h2>
+                        <span>
                             <?php the_title(); ?>
-                        </h2>
+                    </span>
                     </dt>
                     <dd><span>
                             <?php echo CFS()->get('product_price'); ?></span><dd>

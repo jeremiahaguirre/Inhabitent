@@ -1,16 +1,18 @@
 (function($) {
   $(function() {
+    const $field = $('.search-field');
+    const $bar = $('.search-bar');
     $('.icon-search').on('click', event => {
       event.preventDefault();
-      $('.search-bar').toggleClass('after-select');
-      $('.search-field').focus();
+      $bar.toggleClass('after-select');
+      $field.focus();
     });
 
-    $('.search-field').on('blur', event => {
-      if ($('.search-field').val().length > 0) {
+    $field.on('blur', event => {
+      if ($field.val().length > 0) {
         return false;
       }
-      $('.search-bar').removeClass('after-select');
+      $bar.removeClass('after-select');
     });
   });
 })(jQuery);

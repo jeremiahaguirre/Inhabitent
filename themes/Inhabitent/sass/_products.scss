@@ -42,12 +42,14 @@ dt:after {
     }
     text-align: center;
   }
-  h2 {
-    font-size: 0.9rem;
-    display: inline;
-    font-family: $font__main;
-    overflow: hidden;
-    white-space: nowrap;
+  .product-group {
+    h2 {
+      font-size: 0.9rem;
+      display: inline;
+      font-family: $font__main;
+      overflow: hidden;
+      white-space: nowrap;
+    }
   }
 }
 

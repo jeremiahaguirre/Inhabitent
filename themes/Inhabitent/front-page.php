@@ -28,7 +28,7 @@ get_header(); ?>
                     <p>
                         <?php echo $term->description; ?>
                     </p>
-                    <a href="<?php get_term_link($term); ?>">
+                    <a href="<?php echo get_term_link($term); ?>">
                         <?php echo $term->name; ?></a>
                 </li>
             </ul>
@@ -62,20 +62,21 @@ get_header(); ?>
         <section class="adventure-posts">
             <div class="adventure-1">
                 <h2>Getting Back to Nature in a Canoe</h2>
-                <button>Read more</button>
+                <a href="#">Read more</a>
             </div>
             <div class="adventure-2">
                 <h2>A Night with Friends at the Beach</h2>
-                <button>Read more</button>
+                <a href="#">Read more</a>
             </div>
             <div class="adventure-3">
                 <h2>Taking in the View at Big Mountain</h2>
-                <button>Read more</button>
+                <a href="#">Read more</a>
             </div>
             <div class="adventure-4">
                 <h2>Star-Gazing at the Night Sky</h2>
-                <button>Read more</button>
+                <a href="#">Read more</a>
             </div>
+            <a href="#" class='last-btn'>More Adventures</a>
         </section>
 
     </main><!-- #main -->
