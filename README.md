@@ -44,4 +44,4 @@ We started with the red starter theme, renamed it, and have costumized the templ
 
 ### ScreenShot
 
-![alt text](screenshot.png)
+![alt text](themes/Inhabitent/screenshot.png)
