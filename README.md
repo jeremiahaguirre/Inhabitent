@@ -44,4 +44,4 @@ We started with the red starter theme, renamed it, and have costumized the templ
 
 ### ScreenShot
 
-![picture](https://via.placeholder.com/300/09f/fff.pngC/O https://placeholder.com/)
+![alternativetext](https://via.placeholder.com/300/09f/fff.pngC/O https://placeholder.com/)
