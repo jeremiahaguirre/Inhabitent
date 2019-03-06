@@ -1,7 +1,18 @@
 # Inhabitent
-A website selling camping items and contains blog post regarding outdoors
 
-## Skills used
+A WordPress starter, selling camping items and containing blog post regarding outdoors, theme for RED Academy Inhabitent project-04, forked from Underscores.
+
+## Installation
+
+### 1. Download me (don't clone me!)
+
+Then add me to your `wp-content` directory.
+
+### 3. Install the dev dependencies
+
+Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
+
+### Skills used
 
 * Wordpress
 * Widgets Plugin API for wordpress
@@ -11,7 +22,7 @@ A website selling camping items and contains blog post regarding outdoors
 * javaSript
 * jQuery
 
-## Plugins
+### Plugins
 
 **Important ones:**
 
@@ -27,6 +38,6 @@ A website selling camping items and contains blog post regarding outdoors
 * Debug Bar
 * Custom Field Suite
 
-## About the project
+### About the project
 
 We started with the red starter theme, renamed it, and have costumized the templates and partials for Inhabitent. I have learned a lot about how to use partials. I also feel more firm in my knowledge in css in this project. I worked for the first time with grid and it was great!!
