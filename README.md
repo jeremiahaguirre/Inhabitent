@@ -8,7 +8,7 @@ A WordPress starter, selling camping items and containing blog post regarding ou
 
 Then add me to your `wp-content` directory.
 
-### 3. Install the dev dependencies
+### 2. Install the dev dependencies
 
 Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
 
