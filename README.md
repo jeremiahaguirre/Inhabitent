@@ -14,29 +14,29 @@ Next you'll need to run `npm install` **inside your theme directory** next to in
 
 ### Skills used
 
-* Wordpress
-* Widgets Plugin API for wordpress
-* php
-* more git
-* Sass
-* javaSript
-* jQuery
+- Wordpress
+- Widgets Plugin API for wordpress
+- php
+- more git
+- Sass
+- javaSript
+- jQuery
 
 ### Plugins
 
 **Important ones:**
 
-* Contact Form 7
-* Inhabitent blocks from github repo
-* Inhabitent functionality from github repo
-* Inhabitent Business Hours Widget
+- Contact Form 7
+- Inhabitent blocks from github repo
+- Inhabitent functionality from github repo
+- Inhabitent Business Hours Widget
 
- **Optional:**
+  **Optional:**
 
-* Show Current Template
-* Theme Check
-* Debug Bar
-* Custom Field Suite
+- Show Current Template
+- Theme Check
+- Debug Bar
+- Custom Field Suite
 
 ### About the project
 
@@ -44,4 +44,4 @@ We started with the red starter theme, renamed it, and have costumized the templ
 
 ### ScreenShot
 
-![alternativetext](/screenshot.png)
+![picture](https://via.placeholder.com/300/09f/fff.pngC/O https://placeholder.com/)
