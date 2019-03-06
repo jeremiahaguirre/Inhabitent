@@ -20,8 +20,6 @@
   height: 100vh;
 }
 
-
-
 //Single products styling
 .single-product {
   .entry-title {
@@ -62,9 +60,18 @@
 }
 
 //Blog content styling
-.blog {
+.blog ,.archive{
+  .entry-title {
+    background-color: $color__green;
+    font-size: 2.1rem;
+    padding: 10px;
+    width: 70%;
+    bottom: 521px;
+    position: relative;
+  }
   .site-main {
     margin-top: 40px;
+    margin-right: 10px;
   }
   header {
     max-height: 600px;
@@ -103,7 +110,7 @@
   }
   .entry-meta {
     position: relative;
-    left: 522px;
+    left: 512px;
     bottom: 268px;
     background-color: $color__green;
     color: #fff;
@@ -113,15 +120,25 @@
 }
 
 //Single journal posts
-.entry-title {
+
+.entry-meta {
   background-color: $color__green;
-  font-size: 2.1rem;
-  padding: 10px;
-  width: 70%;
-  bottom: 521px;
+  width: 40%;
+  padding-left: 10px;
   position: relative;
+  left: 515px;
+  bottom: 240px;
+  color: #fff;
 }
-.single-post {
+.single-post{
+  .entry-title {
+    background-color: $color__green;
+    font-size: 2.1rem;
+    padding: 10px;
+    width: 70%;
+    bottom: 521px;
+    position: relative;
+  }
   .site-content {
     display: flex;
     height: 100%;
@@ -148,6 +165,7 @@
   }
 
   .entry-header {
+    height: 570px;
     h1 {
       position: relative;
       bottom: 550px;
