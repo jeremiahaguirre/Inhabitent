@@ -41,3 +41,7 @@ Next you'll need to run `npm install` **inside your theme directory** next to in
 ### About the project
 
 We started with the red starter theme, renamed it, and have costumized the templates and partials for Inhabitent. I have learned a lot about how to use partials. I also feel more firm in my knowledge in css in this project. I worked for the first time with grid and it was great!!
+
+### ScreenShot
+
+![picture](/screenshot.png)
