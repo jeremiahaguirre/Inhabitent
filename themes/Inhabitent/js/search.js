@@ -17,6 +17,3 @@
   });
 })(jQuery);
 
-//If statement if value in field dont close
-//Animation smooth
-//Use constants
