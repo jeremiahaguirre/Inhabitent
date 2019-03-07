@@ -60,7 +60,8 @@
 }
 
 //Blog content styling
-.blog ,.archive{
+.blog,
+.archive {
   .entry-title {
     background-color: $color__green;
     font-size: 2.1rem;
@@ -130,7 +131,7 @@
   bottom: 240px;
   color: #fff;
 }
-.single-post{
+.single-post {
   .entry-title {
     background-color: $color__green;
     font-size: 2.1rem;
@@ -234,5 +235,10 @@
   }
   a {
     color: $color__green;
+  }
+}
+.post-type-archive-product {
+  .site-content {
+    width: unset;
   }
 }
